@@ -59,6 +59,7 @@
 </head>
 <body class="text-slate-900">
 
+    <!-- scroll img -->
 <div id="details-modal" class="fixed inset-0 z-[100] items-center justify-center p-0 md:p-6 bg-slate-900/90">
     <div class="modal-content bg-white w-full h-full md:h-auto md:max-h-[90vh] md:max-w-5xl md:rounded-[32px] overflow-hidden shadow-2xl relative flex flex-col md:grid md:grid-cols-2">
         
@@ -133,6 +134,7 @@
     <i data-lucide="phone" class="w-7 h-7"></i>
 </a>
 
+<!-- navbar -->
 <header id="navbar" class="fixed top-0 w-full z-40 transition-all duration-300 py-6">
     <div class="container mx-auto px-6 flex justify-between items-center">
         <div class="flex items-center gap-2 bg-white/80 backdrop-blur-md px-4 py-1 rounded-xl shadow-sm">
@@ -140,6 +142,7 @@
         </div>
         <nav class="hidden md:flex items-center gap-8 bg-white/50 backdrop-blur-md px-8 py-3 rounded-full border border-white/20 shadow-sm font-bold text-sm text-slate-700">
             <a href="#" class="hover:text-blue-600 transition-colors">Utama</a>
+            <a href="#tentang-kami" class="hover:text-blue-600 transition-colors">Tentang Kami</a>
             <a href="#perkhidmatan" class="hover:text-blue-600 transition-colors">Perkhidmatan</a>
             <a href="#kereta" class="hover:text-blue-600 transition-colors">Koleksi</a>
             <a href="#hubungi" class="hover:text-blue-600 transition-colors">Hubungi</a>
@@ -148,15 +151,112 @@
     </div>
 </header>
 
-<section class="min-h-screen flex items-center justify-center pt-20 px-6">
-    <div class="text-center max-w-5xl">
-        <span class="reveal inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6">Johor Bahru Car Rental</span>
-        <h2 class="reveal text-5xl md:text-8xl font-black text-slate-900 mb-8 leading-[0.9] tracking-tighter">
-            Drive Premium. <br> <span class="text-blue-600">Live Legasi.</span>
-        </h2>
-        <div class="reveal flex flex-wrap justify-center gap-4">
-            <a href="#kereta" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold hover:bg-blue-600 transition-all shadow-2xl">Lihat Kenderaan Kami</a>
-            <a href="https://wa.me/60185723533" class="bg-white border-2 border-slate-200 px-10 py-5 rounded-2xl font-bold hover:bg-slate-50 transition-all">Hubungi Kami</a>
+<section class="min-h-screen relative flex items-center justify-center pt-20 px-6">
+  <!-- Background Image + Overlay -->
+  <div class="absolute inset-0">
+    <img src="https://images.unsplash.com/photo-1565043762739-73ca9d0e0c77?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+         alt="Car driving scenic road" 
+         class="w-full h-full object-cover object-center">
+    <div class="absolute inset-0 bg-slate-900/40"></div>
+  </div>
+
+  <!-- Hero Content -->
+  <div class="relative text-center max-w-5xl text-white">
+    <span class="reveal inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-6 text-opacity-90">
+      Johor Bahru Car Rental
+    </span>
+<h2 class="reveal text-5xl md:text-8xl font-black mb-8 leading-[0.9] tracking-tighter text-white drop-shadow-lg">
+    Drive <span class="text-blue-400">Premium.</span> <br>
+    <span class="text-white">Live Legasi.</span>
+</h2>
+    <div class="reveal flex flex-wrap justify-center gap-4">
+      <a href="#kereta" class="bg-blue-600 text-white px-10 py-5 rounded-2xl font-bold hover:bg-blue-700 transition-all shadow-2xl">
+        Lihat Kenderaan Kami
+      </a>
+      <a href="https://wa.me/60185723533" class="bg-white text-slate-900 px-10 py-5 rounded-2xl font-bold hover:bg-slate-100 transition-all">
+        Hubungi Kami
+      </a>
+    </div>
+  </div>
+</section>
+
+
+<!-- about us -->
+<section id="about" class="py-12 md:py-16 px-6">
+    <div class="container mx-auto max-w-5xl">
+
+        <!-- Section Badge -->
+        <div class="flex justify-center mb-4">
+            <span class="reveal inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase">
+                Tentang Kami
+            </span>
+        </div>
+
+        <!-- Section Title -->
+        <div class="text-center mb-10">
+            <h2 class="reveal text-4xl md:text-5xl font-black text-slate-900 tracking-tighter leading-tight mb-6">
+                Servis Profesional,<br>
+                <span class="text-blue-600">Dipercayai Ramai.</span>
+            </h2>
+        </div>
+
+        <!-- Content -->
+        <div class="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+
+            <!-- Left Text -->
+            <div class="reveal">
+                <p class="text-slate-600 leading-relaxed mb-5 text-sm md:text-base">
+                    <span class="font-bold text-slate-900">Legasi YZ Transport</span> telah beroperasi selama
+                    lebih 2 tahun menyediakan perkhidmatan
+                    <span class="font-semibold">sewa kereta pandu sendiri</span> atau
+                    <span class="font-semibold">dengan pemandu</span> untuk kegunaan peribadi, keluarga dan korporat.
+                </p>
+
+                <p class="text-slate-600 leading-relaxed text-sm md:text-base">
+                    Kami juga menyediakan perkhidmatan
+                    <span class="font-semibold">penghantaran ke rumah atau pejabat</span>
+                    di sekitar <span class="font-semibold">Johor Bahru</span> bagi memastikan
+                    pengalaman sewaan yang mudah, cepat dan selesa.
+                </p>
+            </div>
+
+            <!-- Right Info Cards -->
+            <div class="grid grid-cols-1 gap-5">
+
+                <!-- Operation Hours -->
+                <div class="reveal group bg-white p-5 rounded-2xl border border-slate-100 shadow-lg 
+                            flex items-center gap-4 transition-all duration-500 
+                            hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-12 h-12 bg-blue-600/10 text-blue-600 rounded-xl 
+                                flex items-center justify-center shrink-0
+                                transition-transform duration-500 group-hover:scale-110">
+                        <i data-lucide="clock" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase text-slate-400">Waktu Operasi</p>
+                        <p class="font-bold text-slate-900">9.00 Pagi – 9.00 Malam</p>
+                        <p class="text-xs text-slate-500 italic">Tempahan awal dibuka 24 jam</p>
+                    </div>
+                </div>
+
+                <!-- Services -->
+                <div class="reveal group bg-white p-5 rounded-2xl border border-slate-100 shadow-lg 
+                            flex items-center gap-4 transition-all duration-500 
+                            hover:-translate-y-2 hover:shadow-xl">
+                    <div class="w-12 h-12 bg-green-600/10 text-green-600 rounded-xl 
+                                flex items-center justify-center shrink-0
+                                transition-transform duration-500 group-hover:scale-110">
+                        <i data-lucide="car" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase text-slate-400">Perkhidmatan</p>
+                        <p class="font-bold text-slate-900">Pandu Sendiri & Dengan Pemandu</p>
+                        <p class="text-xs text-slate-500">Penghantaran sekitar Johor</p>
+                    </div>
+                </div>
+
+            </div>
+
         </div>
     </div>
 </section>
@@ -281,6 +381,7 @@
                 </h4>
                 <ul class="space-y-4 text-slate-400 text-sm">
                     <li><a href="#" class="hover:text-white hover:translate-x-2 transition-all flex items-center gap-2 underline-offset-4 hover:underline decoration-blue-500">Utama</a></li>
+                    <li><a href="#tentang-kami" class="hover:text-white hover:translate-x-2 transition-all flex items-center gap-2 underline-offset-4 hover:underline decoration-blue-500">Tentang Kami</a></li>
                     <li><a href="#perkhidmatan" class="hover:text-white hover:translate-x-2 transition-all flex items-center gap-2 underline-offset-4 hover:underline decoration-blue-500">Perkhidmatan</a></li>
                     <li><a href="#kereta" class="hover:text-white hover:translate-x-2 transition-all flex items-center gap-2 underline-offset-4 hover:underline decoration-blue-500">Koleksi Kereta</a></li>
                     <li><a href="#hubungi" class="hover:text-white hover:translate-x-2 transition-all flex items-center gap-2 underline-offset-4 hover:underline decoration-blue-500">Hubungi Kami</a></li>
@@ -354,7 +455,7 @@
             trans: 'Automatic',
             tag: 'Premium MPV',
             images: ['img/starex1.jpg', 'img/starex2.jpg', 'img/starex3.jpg', 'img/starex4.jpg', 'img/starex5.jpg', 'img/starex6.jpg', 'img/starex7.jpg'],
-            specs: ['Full Leather Seats', 'Android Player & Monitor', 'Selesa & Luas', 'Pemandu ke Thailand & SG']
+            specs: ['Full Leather Seats', 'Android Player & Monitor', 'Selesa & Luas', 'Aircond Sejuk', 'Kapasiti Bagasi Besar']
         }
         // Tambah kereta baru di sini: 'alphard': { ... }
     };
